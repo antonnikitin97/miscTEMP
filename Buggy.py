@@ -5,7 +5,7 @@
  
   def sortList(listToSort):
   
-	tempStore = 0
+    tempStore = 0
     numberOfPasses = len(listToSort)
  	
     for i in range(numberOfPasses):
