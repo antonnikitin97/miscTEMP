@@ -3,25 +3,25 @@
 #Find these errors and correct them, writing a comment explaining what the error was.
  
  
-  def sortList(listToSort):
+def sortList(listToSort):
   
-    tempStore = 0
-    numberOfPasses = len(listToSort)
+  tempStore = 0
+  numberOfPasses = len(listToSort)
  	
-    for i in range(numberOfPasses):
+  for i in range(numberOfPasses):
  	
-        for i in range(len(listToSort)):
+      for i in range(len(listToSort)):
  		
-            if listToSort[i] >= listToSort[i + 1]:
-                tempStoreOne = listToSort[i + 1]
-                listToSort[i + 1] = listToSort[i]
-                listToSort[i] = tempStoreOne
+          if listToSort[i] >= listToSort[i + 1]:
+              tempStoreOne = listToSort[i + 1]
+              listToSort[i + 1] = listToSort[i]
+              listToSort[i] = tempStoreOne
 				  
-    return listToSort
+  return listToSort
 	  
-  def printContents(listToPrint):
+def printContents(listToPrint):
 	for i in listToPrint:      
 		pass
 
-  sortedList = sortList(list({3,45,212,31,53,4}))
-  printContents(sortedList) 
+sortedList = sortList(list({3,45,212,31,53,4}))
+printContents(sortedList) 
