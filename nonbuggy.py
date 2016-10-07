@@ -4,21 +4,18 @@
  
  
 def sortList(listToSort):
-  
-  tempStore = 0
-  numberOfPasses = len(listToSort) - 1
+	tempStore = 0
+	numberOfPasses = len(listToSort) - 1
  	
-  for i in range(numberOfPasses):
-         for i in range(len(listToSort) - 1):
-			
-            if listToSort[i] > listToSort[i + 1]:
-              tempStoreOne = listToSort[i + 1]
-              listToSort[i + 1] = listToSort[i]
-              listToSort[i] = tempStoreOne
-				 
+	for i in range(numberOfPasses):
+		for i in range(len(listToSort) - 1):
+			if listToSort[i] > listToSort[i + 1]:
+				tempStoreOne = listToSort[i + 1]
+				listToSort[i + 1] = listToSort[i]
+              			listToSort[i] = tempStoreOne
 	return listToSort
 	  
-def printContents(listToPrint)
+def printContents(listToPrint):
 	for i in listToPrint:      
 		print i
 
