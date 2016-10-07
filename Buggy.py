@@ -8,9 +8,13 @@ def sortList(listToSort):
     numberOfPasses = len(listToSort)
 	
     for i in range(numberOfPasses):
+<<<<<<< HEAD
 	
         for i in range(len(listToSort)):
 		
+=======
+        for i in range(len(listToSort)):
+>>>>>>> 6a8a05472c8c70ca9ed2972d63690535ae822c2d
             if listToSort[i] >= listToSort[i + 1]:
                 tempStoreOne = listToSort[i + 1]
                 listToSort[i + 1] = listToSort[i]
@@ -21,7 +25,11 @@ def sortList(listToSort):
 def printContents(listToPrint):
 
     for i in listToPrint:
+<<<<<<< HEAD
         passs
+=======
+        print i
+>>>>>>> 6a8a05472c8c70ca9ed2972d63690535ae822c2d
 		
 sortedList = sortList(list({3,45,212,31,53,4}))
 printContents(sortedList)
