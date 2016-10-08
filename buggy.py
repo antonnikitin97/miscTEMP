@@ -1,23 +1,26 @@
-#Implemenation of a bubble sort
-#This code complies fine but has some errors that will prevent it from running properly
-#Find these errors and correct them, writing a comment explaining what the error was.
- 
- 
-def sortList(listToSort):
-	tempStore = 0
-	numberOfPasses = len(listToSort)
- 	
-	for i in range(numberOfPasses):
-		for i in range(len(listToSort)):
-			if listToSort[i] >= listToSort[i + 1]:
-				tempStoreOne = listToSort[i + 1]
-				listToSort[i + 1] = listToSort[i]
-              			listToSort[i] = tempStoreOne
-	return listToSort
-	  
-def printContents(listToPrint):
-	for i in listToPrint:      
-		print i
+# Implemenation of a bubble sort.
+# This code complies fine but has some errors that will prevent it
+# from running properly.
+# Find these errors and correct them, writing a comment explaining
+# what the error was.
 
-sortedList = sortList(plist({3,45,212,31,53,4}))
-printContents(sortedList) 
+
+def sort_list(list_to_sort):
+    temp_store = 0
+    number_of_passes = len(list_to_sort)
+    for i in range(number_of_passes):
+        for i in range(len(list_to_sort)):
+            if list_to_sort[i] > list_to_sort[i + 1]:
+                temp_store_one = list_to_sort[i + 1]
+                list_to_sort[i + 1] = list_to_sort[i]
+                list_to_sort[i] = temp_store_one
+    return list_to_sort
+	 
+ 
+def print_contents(list_to_print):
+    for i in list_to_print:      
+        print i
+
+sorted_list = sort_list(list({3, 45, 212, 31, 53, 4}))
+print_contents(sorted_list)
+
