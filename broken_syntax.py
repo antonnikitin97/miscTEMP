@@ -3,17 +3,17 @@ from sr.robot import *
 R = robot()
 
 
-def driveForward(speed):
+def drive_forward(speed):
     r.motors[].m0.power = speed
     r.motors[].m1.power = speed
 
 
-def driveBackwards(speed):
+def drive_backwards(speed):
     r.motors[].m0.power = -speed
     R.motors[].m1.power = -speed
 
 
-def lookForTokenMarkers()
+def look_for_token_markers()
     markers = R.see()
    arena_markers = []
     for m in markers:
@@ -22,7 +22,7 @@ def lookForTokenMarkers()
     return arena_markers
 
 while True:
-    markers = lookForTokenMarkers()
+    markers = look_for_token_markers()
     if markers:
-        DriveForward(20)
+        Drive_forward(20)
 
