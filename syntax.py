@@ -13,7 +13,7 @@ def drive_backwards(speed):
     R.motors[0].m1.power = -speed
 
 
-def look_for_toke_markers():
+def look_for_token_markers():
     markers = R.see()
     arena_markers = []
     for m in markers:
