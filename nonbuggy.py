@@ -7,9 +7,9 @@
 
 def sort_list(list_to_sort):
     temp_store = 0
-    number_of_passes = len(list_to_sort) - 1
+    number_of_passes = len(list_to_sort) - 1    # - 1 Here to avoid list index out of bounds
     for i in range(number_of_passes):
-        for i in range(len(list_to_sort) - 1):
+        for i in range(len(list_to_sort) - 1):    # - 1 Here to avoid list index out of bounds
 	    if list_to_sort[i] >= list_to_sort[i + 1]:
                 temp_store_one = list_to_sort[i + 1]
                 list_to_sort[i + 1] = list_to_sort[i]
