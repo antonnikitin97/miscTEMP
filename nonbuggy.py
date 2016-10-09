@@ -1,26 +1,20 @@
 # Implemenation of a bubble sort.
-# This code complies fine but has some errors that will prevent it
-# from running properly.
+# This code is syntactically correct, however there are a couple of
+# problems that prevent it from producing the desired output.
 # Find these errors and correct them, writing a comment explaining
 # what the error was.
 
+def swap_values(i1, i2, _list):
+    _list[i1], _list[i2] = _list[i2], _list[i1] # Replaced an i2 with another i1
+    return _list
 
-def sort_list(list_to_sort):
-    temp_store = 0
-    number_of_passes = len(list_to_sort) - 1    # - 1 Here to avoid list index out of bounds
-    for i in range(number_of_passes):
-        for i in range(len(list_to_sort) - 1):    # - 1 Here to avoid list index out of bounds
-	    if list_to_sort[i] >= list_to_sort[i + 1]:
-                temp_store_one = list_to_sort[i + 1]
-                list_to_sort[i + 1] = list_to_sort[i]
-                list_to_sort[i] = temp_store_one
-    return list_to_sort
+def sort(values):
+    for pass_num in range(1, len(values)):
+        pass_size = len(values) - pass_num
+        for i in range(pass_size): # Intentionally incorrect + 1
+            if values[i] > values[i + 1]:
+                values = swap_values(i, i + 1, values) # +1 removed in buggy version
+    return values
 
-
-def print_contents(list_to_print):
-    for i in list_to_print:
-        print i
-
-sorted_list = sort_list(list({3, 45, 212, 31, 53, 4}))
-print_contents(sorted_list)
+print sort([3, 45, 212, 31, 53, 4])
 
