@@ -4,9 +4,9 @@
 # Find these errors and correct them, writing a comment explaining
 # what the error was.
 
-def swap_values(i1, i2, _list):
-    _list[i1], _list[i2] = _list[i1], _list[i1]
-    return _list
+def swap_values(i1, i2, list_):
+    list_[i1], list_[i2] = list_[i1], list_[i1]
+    return list_
 
 def sort(values):
     for pass_num in range(1, len(values)):
